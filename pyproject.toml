@@ -30,7 +30,7 @@ render-only = ["numpy>=1.21", "soundfile>=0.12"]
 random-looper = "random_looper.__main__:main"
 
 [project.urls]
-Homepage = "https://github.com/you/random_looper"
+Homepage = "https://github.com/Lorekeeper49/random-looper"
 
 [tool.setuptools.packages.find]
 where = ["src"]
