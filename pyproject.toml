@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "random-looper"
+version = "0.1.0"
+description = "Play an audio file forever with randomized, crossfaded loop points."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }              # change or remove if you prefer
+authors = [{ name = "Your Name", email = "you@example.com" }]
+keywords = ["audio", "looping", "ambient", "crossfade", "soundfile"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Multimedia :: Sound/Audio",
+    "Environment :: Console",
+]
+dependencies = [
+    "numpy>=1.21",
+    "soundfile>=0.12",
+    "sounddevice>=0.4.6",
+]
+
+[project.optional-dependencies]
+# For people who only ever use --no-play and don't want PortAudio installed:
+render-only = ["numpy>=1.21", "soundfile>=0.12"]
+
+[project.scripts]
+random-looper = "random_looper.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/you/random_looper"
+
+[tool.setuptools.packages.find]
+where = ["src"]
