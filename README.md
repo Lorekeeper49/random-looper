@@ -1,4 +1,4 @@
-# random_looper
+# Random Looper
 
 Play an audio file forever with **randomized, crossfaded loop points**, and optionally render an extended copy of it to any length you like.
 
